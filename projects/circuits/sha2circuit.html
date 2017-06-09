@@ -1,0 +1,33 @@
+<h1>A Boolean Circuit for SHA-256<span style="color: #5e9ca0;"><br /></span></h1>
+<p>As part of the implementation of our Zero-knowledge Contignent Payment protocol, we produced an efficient boolean circuit for SHA-256. The format of our circuit&nbsp;is the same as the one used in the&nbsp;<a href="https://www.cs.bris.ac.uk/Research/CryptographySecurity/MPC/">Bristol circuits</a>. The Bristol page does contain a <a href="https://www.cs.bris.ac.uk/Research/CryptographySecurity/MPC/sha-256.txt">SHA-256 circuit</a>.&nbsp;However, our circuit was optimized to have far fewer AND gates. We share it here as we think it may be useful in general.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<center>
+  <!-- Table modified from Bristol page-->
+<table border="1">
+<tbody>
+  
+<tr>
+<td>&nbsp;</td>
+<td><strong>File</strong></td>
+<td><strong>No. ANDs</strong></td>
+<td><strong>No. XORs</strong></td>
+<td><strong>No. INVs</strong></td>
+</tr>
+<tr>
+<td>Our circuit</td>
+<td><a href="sha256Final.txt">sha256Final.txt</a></td>
+<td>22,272&nbsp;</td>
+<td>91,780</td>
+<td>2,194</td>
+</tr>
+<tr>
+<td>Bristol circuit</td>
+<td><a href="https://www.cs.bris.ac.uk/Research/CryptographySecurity/MPC/sha-256.txt">sha-256.txt</a></td>
+<td>90,825</td>
+<td>42,029</td>
+<td>103,258</td>
+</tr>
+</tbody>
+</table>
+</center>
